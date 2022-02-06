@@ -8,6 +8,7 @@ import Portfolio from './components/portfolio';
 import Nav from './components/nav';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Resume from './components/resume';
 
 
 
@@ -23,12 +24,10 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="portfolio" element={<Portfolio />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="resume" element={<Resume />} />
             {/* <Route path="*" element={<NoPage />} /> */}
             {/*add blog later*/}
           </Route>
-          {/* <Route path="/about" element={<About />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} /> */}
         </Routes>
       </BrowserRouter>
     </div>
