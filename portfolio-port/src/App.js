@@ -5,7 +5,6 @@ import About from './components/about';
 import Layout from './components/layout';
 import Contact from './components/contact';
 import Portfolio from './components/portfolio';
-import Nav from './components/nav';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Resume from './components/resume';

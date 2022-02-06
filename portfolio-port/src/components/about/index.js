@@ -1,10 +1,6 @@
-import React, { Component } from "react";
-import '/Users/alexsnyder/UM Coding Bootcamp/homework/my-REACT-portfolio/portfolio-port/src/App.css';
-import coverImage from "../../assets/cover/github.jpeg";
+import React from "react";
 import TextTransition, { presets } from "react-text-transition";
 import { Card, Col, Image, Row } from "react-bootstrap";
-import ProfileUi from 'react-profile-card';
-import { Avatar } from "@mui/material";
 
 
 
@@ -48,10 +44,10 @@ function About() {
           <Card bg="dark" text="white" body>
           <Row className="justify-content-md-center">
             <Col md={4}>
-              <Image className="mb-5 mt-2" roundedCircle fluid thumbnail src="avatar2.png" />
+              <Image className="mb-2 mt-2" roundedCircle fluid thumbnail src="avatar2.png" />
             </Col>
-            <Card.Text>
-              Hi!<br/>
+            <Card.Text className="text-center mb-2">
+              Hi!<br/> <br/>
               Thank you for visiting my portfolio.<br/>
                I am a Full Stack Web Developer based in Miami, FL. <br/> 
               I am currently enrolled in University of Miami Coding Bootcamp and scheduled to graduate in February 2022.<br/> Please use the contact link to send me a message. I look forward to hearing from you!

@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from '../nav';
-import { Outlet, Link } from "react-router-dom";
-import { Container, Navbar } from 'react-bootstrap';
+import { Outlet } from "react-router-dom";
+import { Container } from 'react-bootstrap';
 import background from "../../assets/planet.jpg";
 import Footer from '../footer';
 
@@ -11,18 +11,18 @@ function Layout({ children }) {
   return (
     <div style={{
       backgroundImage: `url(${background})`,
-      backgroundPosition: 'center',
+      backgroundPosition: 'fixed',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       width: '100vw',
-      height: '100vh'
+      height: '100%'
     }}>
       <Nav></Nav>
-      <Container fluid className="mt-5">
+      <Container style={{minHeight: "100vh", width: "100%"}}fluid className="mt-5">
         <Outlet />
       </Container>
-      <footer>
-        <Footer />
+      <footer style={{bottom: 0, position: "relative", width: "100%"}}>
+        <Footer/>
       </footer>
     </div>
   );

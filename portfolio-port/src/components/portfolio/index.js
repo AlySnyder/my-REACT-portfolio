@@ -1,10 +1,6 @@
 import React from "react";
 import '../../App.css';
-import coverImage from "../../assets/cover/github.jpeg";
-import Nav from "../nav";
-import About from "../about";
 import { Button, Card, Row, Col } from "react-bootstrap";
-import blogImage from "../../assets/alysblog.jpg"
 
 
 function Portfolio() {
@@ -18,13 +14,13 @@ function Portfolio() {
     },
     {
       title: "Alex's Awesome Tech Blog",
-      image: "https://howtostartablog.com/wp-content/uploads/2018/09/how-to-start-a-blog-1600x960.jpg",
+      image: "Alys tech blog.png",
       githubRepo: "https://github.com/AlySnyder/alys-awesome-tech-blog",
       deployment: "https://gentle-brook-44437.herokuapp.com",
     },
     {
       title: "My Portfolio",
-      image: "https://blog-frontend.envato.com/cdn-cgi/image/width=1200,quality=75,format=auto/uploads/2020/06/SOC101_Portfolio_Guide.png",
+      image: "Alys portfolio.png",
       githubRepo: "https://github.com/AlySnyder/my-REACT-portfolio",
       deployment: "https://apple.com",
     },
@@ -36,13 +32,13 @@ function Portfolio() {
     },
     {
       title: "Work Day Scheduler",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREHO_5lV9ejy8iv-Xv8jfOFa8yxLgWn5Y6OA&usqp=CAU",
+      image: "workday scheduler.png",
       githubRepo: "https://github.com/AlySnyder/workday-scheduler",
       deployment: "https://alysnyder.github.io/workday-scheduler/",
     },
     {
       title: "Note Taker",
-      image: "https://hip2save.com/wp-content/uploads/2020/08/Lisa-Frank-Notebooks-at-Walmart-.jpg",
+      image: "notetaker.png",
       githubRepo: "https://github.com/AlySnyder/note-taker",
       deployment: "https://intense-badlands-81787.herokuapp.com/notes",
     },
@@ -53,7 +49,7 @@ function Portfolio() {
       {projects.map((project) => (
         <Col sm={4} className="mb-3">
           <Card bg="dark" text="warning">
-            <Card.Img variant="top" src={project.image} />
+            <Card.Img style={{width: "100%", height: "15vw", objectFit: "cover"}} variant="top" src={project.image} />
             <Card.Body>
               <Card.Title>{project.title}</Card.Title>
               <Row>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button, FormControl, Card } from 'react-bootstrap';
 import { toast } from 'react-toastify';
+import { Row, Col } from "react-bootstrap";
 
 import { validateEmail } from '../../utils/helpers';
 
@@ -48,6 +49,8 @@ function ContactForm() {
   };
 
   return (
+    <Row className="justify-content-md-center mb-5 mt-5">
+    <Col md={5}>
     <Card className="mt-5 bg-dark text-white" body>
       <Card.Title className="mb-3">Contact Me</Card.Title>
       <Form onSubmit={handleSubmit}>
@@ -73,6 +76,8 @@ function ContactForm() {
         </Button>
       </Form>
     </Card>
+    </Col>
+      </Row>
   );
 }
 
