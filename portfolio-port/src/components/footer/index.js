@@ -4,7 +4,7 @@ import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import { Link, NavLink } from "react-router-dom";
 
 
-function nav() {
+function Footer() {
 
   const categories = [
     {
@@ -25,11 +25,10 @@ function nav() {
     <header>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Nav>
-            <Navbar.Brand as={Link} to="/">👩🏻‍💻 Alex Snyder</Navbar.Brand>
-            {categories.map((category) => (
-              <Nav.Link as={NavLink} activeClassName="is-active" to={category.linkPath}>{category.name}</Nav.Link>
-            ))}
+          <Nav className="m-auto">
+            <Nav.Link href="https://github.com/AlySnyder" target="_blank">github</Nav.Link>
+            <Nav.Link href="https://www.linkedin.com" target="_blank">linkedin</Nav.Link>
+            <Nav.Link href="https://twitter.com/i/flow/login" target="_blank">Twitter</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
@@ -37,4 +36,4 @@ function nav() {
   );
 }
 
-export default nav;
+export default Footer;
