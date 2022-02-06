@@ -18,7 +18,7 @@ function Layout({ children }) {
       height: '100vh'
     }}>
       <Nav></Nav>
-      <Container>
+      <Container fluid className="mt-5">
         <Outlet />
       </Container>
       <footer>

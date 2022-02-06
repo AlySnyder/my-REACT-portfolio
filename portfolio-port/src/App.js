@@ -12,7 +12,6 @@ import Resume from './components/resume';
 
 
 
-
 function App() {
 
   return (
@@ -21,6 +20,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
+            <Route index element={<About />} />
             <Route path="about" element={<About />} />
             <Route path="portfolio" element={<Portfolio />} />
             <Route path="contact" element={<Contact />} />

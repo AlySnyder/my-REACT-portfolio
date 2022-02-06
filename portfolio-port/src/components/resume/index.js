@@ -18,9 +18,9 @@ function Resume() {
   <div class="card-header">
     Skills
   </div> */}
-      <Card>
+      <Card className="mt-5 bg-dark text-white">
         <Card.Body>
-          <h1>Skills</h1>
+          <h1>My Skills</h1>
           <ListGroup>
             <ListGroup.Item>HTML</ListGroup.Item>
             <ListGroup.Item>CSS</ListGroup.Item>

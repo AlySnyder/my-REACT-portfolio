@@ -48,7 +48,7 @@ function ContactForm() {
   };
 
   return (
-    <Card className="mt-5" body>
+    <Card className="mt-5 bg-dark text-white" body>
       <Card.Title className="mb-3">Contact Me</Card.Title>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formName">

@@ -26,7 +26,7 @@ function nav() {
       <Navbar bg="dark" variant="dark">
         <Container>
           <Nav>
-            <Navbar.Brand as={Link} to="/">👩🏻‍💻 Alex Snyder</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/">👩🏻‍💻 Alexandra Snyder</Navbar.Brand>
             {categories.map((category) => (
               <Nav.Link as={NavLink} activeClassName="is-active" to={category.linkPath}>{category.name}</Nav.Link>
             ))}
