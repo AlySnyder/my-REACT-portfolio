@@ -55,7 +55,7 @@ Alex Snyder - (Alex Snyder)[https://github.com/AlySnyder]
 
 ## Screenshot
 
-![Aly's Portfolio](Alys portfolio.png)
+![](public/Alys%20portfolio.png)
 
 
 ## Questions
