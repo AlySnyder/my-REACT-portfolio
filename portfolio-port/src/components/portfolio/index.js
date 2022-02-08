@@ -1,6 +1,7 @@
 import React from "react";
 import '../../App.css';
 import { Button, Card, Row, Col } from "react-bootstrap";
+import Project from "./project";
 
 
 function Portfolio() {
@@ -48,24 +49,14 @@ function Portfolio() {
     <Row className="mt-5">
       {projects.map((project) => (
         <Col sm={4} className="mb-3">
-          <Card bg="dark" text="warning">
-            <Card.Img style={{width: "100%", height: "15vw", objectFit: "cover"}} variant="top" src={project.image} />
-            <Card.Body>
-              <Card.Title>{project.title}</Card.Title>
-              <Row>
-                <Col>
-                  <a href={project.githubRepo} target="_blank">
-                    <Button>Github Repo</Button>
-                  </a>
-                </Col>
-                <Col>
-                  <a href={project.deployment} target="_blank">
-                    <Button>Deployment</Button>
-                  </a>
-                </Col>
-              </Row>
-            </Card.Body>
-          </Card>
+
+          <Project
+            title={project.title}
+            image={project.image}
+            githubRepo={project.githubRepo}
+            deployment={project.deployment}
+          />
+
         </Col>
       ))}
     </Row>
