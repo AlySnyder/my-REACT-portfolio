@@ -8,10 +8,10 @@ function Portfolio() {
 
   const projects = [
     {
-      title: "Covid-19 Activity Tracker",
-      image: "https://user-images.githubusercontent.com/59854414/147838352-dc9a492e-b0fb-4da1-870e-e01dc6ca1fbf.png",
-      githubRepo: "https://github.com/AlySnyder/interactive-project-15",
-      deployment: "https://quiet-badlands-14441.herokuapp.com",
+      title: "spacebook",
+      image: "spacebook.jpeg",
+      githubRepo: "https://github.com/kassidyr/Project-3",
+      deployment: "https://spacebook-social-network.herokuapp.com",
     },
     {
       title: "Alex's Awesome Tech Blog",
